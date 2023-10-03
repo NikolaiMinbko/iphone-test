@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Iphone App</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="banner">
+        <div class="container">
+          <div class="banner__inner">
+            <a class="banner-close__link" href="#">
+              <img class="banner-close__icon" src="src/assets/icons/cross.svg" alt="cross-icon">
+            </a>
+
+              <h1 class="banner__title">Get Unlimited <br>Access</h1>
+
+              <ul class="advantages__list">
+                <li class="advantages__list-item advantages__art">
+                  <p class="advantages__item-text">Unlimited Art <br>Creation</p>
+                </li>
+                <li class="advantages__list-item advantages__styles">
+                  <p class="advantages__item-text">Exclusive <br>Styles</p>
+                </li>
+                <li class="advantages__list-item advantages__avatars">
+                  <p class="advantages__item-text">Magic Avatars <br>With 20% Off</p>
+                </li>
+              </ul>
+
+              <form class="offers">
+                <label class="offers__row offers__row--best-offer offers__row--yearly">
+                  <input class="offers__row-input" name="offers" checked hidden type="radio" value="https://apple.com">
+
+                  <div class="offers__col">
+                    <h2 class="offers__col-title">YEARLY ACCESS</h2>
+
+                    <p class="offers__col-price">Just {{price}} per year</p>
+                  </div>
+
+                  <p class="offers__price">{{price}} <br>per week</p>
+
+                  <span class="offers__label">BEST OFFER</span>
+                </label>
+
+                <label class="offers__row offers__row--weekly">
+                  <input class="offers__row-input" name="offers" hidden type="radio" value="https://google.com">
+
+                  <div class="offers__col">
+                    <h2 class="offers__col-title">WEEKLY ACCESS</h2>
+                  </div>
+
+                  <p class="offers__price">{{price}} <br>per week</p>
+                </label>
+
+                <button class="offers__submit">Continue</button>
+              </form>
+  
+              <ul class="banner-links__list">
+                <li class="banner-links__list-item">
+                  <a href="#">Terms of Use</a>
+                </li>
+                <li class="banner-links__list-item">
+                  <a href="#">Restore</a>
+                </li>
+                <li class="banner-links__list-item">
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </section> 
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
